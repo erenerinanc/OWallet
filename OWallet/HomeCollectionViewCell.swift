@@ -29,7 +29,6 @@ import SnapKit
         $0.axis = .vertical
         $0.alignment = .leading
         $0.spacing = 4
-        $0.distribution = .equalSpacing
     }
     /// currency
     lazy var price = UILabel().configure {
@@ -45,7 +44,10 @@ import SnapKit
         $0.spacing = 4
     }
     /// outside stack
-    private lazy var outsideStack = UIStackView(arrangedSubviews: [coinStack, currencyStack])
+     private lazy var outsideStack = UIStackView(arrangedSubviews: [coinStack, currencyStack]).configure {
+         $0.alignment = .center
+         $0.distribution = .fillProportionally
+     }
     // MARK: Object Lifecycle
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -77,6 +79,7 @@ import SnapKit
         contentView.addSubview(containerView)
         containerView.snp.makeConstraints { make in
             make.directionalEdges.equalToSuperview().inset(8)
+            make.center.equalToSuperview()
         }
     }
     
