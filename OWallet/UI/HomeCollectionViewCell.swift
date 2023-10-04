@@ -89,7 +89,7 @@ import SnapKit
         }
         coinSymbol.text = viewModel.coinSymbol
         coinName.text = viewModel.coinName
-        price.text = viewModel.price
+        price.text = viewModel.value
         change.text = viewModel.change
         change.textColor = viewModel.isProfited ? .systemGreen : .systemOrange
         
@@ -110,7 +110,8 @@ extension HomeCollectionViewCell {
         let coinImageURL: String
         let coinSymbol: String
         let coinName: String
-        let price: String
+        let value: String
+        let valueDouble: Double
         let change: String
         let isProfited: Bool
     }

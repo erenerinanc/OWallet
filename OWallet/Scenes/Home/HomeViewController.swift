@@ -18,23 +18,47 @@ class HomeViewController: BaseViewController {
     var interactor: HomeBusinessLogic?
     var router: (HomeRoutingLogic & HomeDataPassing)?
     var items: [HomeCollectionViewCell.ViewModel]?
+    
+    lazy var listItem = UIBarButtonItem(title: "List", style: .plain, target: self, action: #selector(list)).configure {
+        $0.tintColor = .systemPurple
+    }
+    lazy var sortItem = UIBarButtonItem(title: "Sort", style: .plain, target: self, action: #selector(sort)).configure {
+        $0.tintColor = .systemPurple
+    }
     lazy var collectionView = UICollectionView(frame: .zero,
-                                               collectionViewLayout: UICollectionView.makeVerticalLayout()).configure {
+                                               collectionViewLayout: UICollectionView.makeVerticalLayout(cellHeight: 80)).configure {
         $0.delegate = self
         $0.dataSource = self
     }
+    var selectedListingIndex: Int?
+    var selectedSortingIndex: Int?
     
     // MARK: View lifecycle
     override public func viewDidLoad() {
         super.viewDidLoad()
-        setUpVIPCycle()
+        setNavigationBar()
+        setUp()
         configureUI()
         collectionView.register(HomeCollectionViewCell.self,
                                 forCellWithReuseIdentifier: HomeCollectionViewCell.reuseId)
         interactor?.fetchCoins()
     }
     
-    private func setUpVIPCycle() {
+    private func setNavigationBar() {
+        title = Constants.homeTitle
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationItem.rightBarButtonItems = [listItem, sortItem]
+    }
+    
+    @objc func list() {
+        router?.openModal(type: .listing(), selectedIndex: selectedListingIndex)
+    }
+    
+    @objc func sort() {
+        router?.openModal(type: .sorting(), selectedIndex: selectedSortingIndex)
+    }
+    
+    private func setUp() {
         let presenter = HomePresenter()
         let worker = HomeWorker(networkable: NetworkManager(decoder: JSONDecoder(),
                                                             session: URLSession.shared))
@@ -91,6 +115,19 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         cell.set(viewModel: cellModel)
         return cell
     }
-    
-    
+}
+
+// MARK: - ModalControllerDelegate
+extension HomeViewController: ModalControllerDelegate {
+    func didSelectItem(type: ModalType, index: Int) {
+        switch type {
+        case .listing:
+            selectedListingIndex = index
+            listItem.tintColor = .systemGreen
+        case .sorting:
+            selectedSortingIndex = index
+            sortItem.tintColor = .systemGreen
+        }
+        interactor?.listOrSort(type: type, index: index)
+    }
 }

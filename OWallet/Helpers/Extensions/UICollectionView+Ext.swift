@@ -9,14 +9,14 @@ import Foundation
 import UIKit
 
 extension UICollectionView {
-    static func makeVerticalLayout() -> UICollectionViewCompositionalLayout {
+    static func makeVerticalLayout(cellHeight: CGFloat) -> UICollectionViewCompositionalLayout {
         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1),
                                               heightDimension: .fractionalHeight(1))
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
         let padding: CGFloat = 16
         item.contentInsets = .init(top: 0, leading: padding/2, bottom: padding, trailing: padding/2)
         let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1),
-                                               heightDimension: .absolute(80))
+                                               heightDimension: .absolute(cellHeight))
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize,
                                                      subitems: [item])
 
