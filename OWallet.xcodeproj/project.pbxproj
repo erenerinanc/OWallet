@@ -1,0 +1,771 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		112ECAAA2ACB57FB00989AD3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112ECAA92ACB57FB00989AD3 /* HomeViewController.swift */; };
+		112ECAC72ACB586600989AD3 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112ECAC02ACB586600989AD3 /* DetailPresenter.swift */; };
+		112ECAC82ACB586600989AD3 /* DetailWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112ECAC12ACB586600989AD3 /* DetailWorker.swift */; };
+		112ECACA2ACB586600989AD3 /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112ECAC32ACB586600989AD3 /* DetailRouter.swift */; };
+		112ECACB2ACB586600989AD3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112ECAC42ACB586600989AD3 /* DetailViewController.swift */; };
+		112ECACC2ACB586600989AD3 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112ECAC52ACB586600989AD3 /* DetailViewModel.swift */; };
+		112ECACD2ACB586600989AD3 /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112ECAC62ACB586600989AD3 /* DetailInteractor.swift */; };
+		112ECAD02ACB5B0D00989AD3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112ECACF2ACB5B0D00989AD3 /* BaseViewController.swift */; };
+		112ECAD22ACB63EA00989AD3 /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112ECAD12ACB63EA00989AD3 /* RequestBuilder.swift */; };
+		112ECAD42ACB678C00989AD3 /* URLRequest+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112ECAD32ACB678C00989AD3 /* URLRequest+Ext.swift */; };
+		112ECAD62ACB74B700989AD3 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112ECAD52ACB74B700989AD3 /* String+Ext.swift */; };
+		11B864092ACD1CB700409740 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B864082ACD1CB600409740 /* UIColor+Ext.swift */; };
+		11B8640B2ACD1E7C00409740 /* Double+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B8640A2ACD1E7C00409740 /* Double+Ext.swift */; };
+		11B8640D2ACD218200409740 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B8640C2ACD218200409740 /* HomeInteractor.swift */; };
+		11B8640F2ACD21A200409740 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B8640E2ACD21A200409740 /* HomePresenter.swift */; };
+		11B864112ACD21BB00409740 /* HomeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B864102ACD21BB00409740 /* HomeWorker.swift */; };
+		11B864132ACD21CF00409740 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B864122ACD21CF00409740 /* HomeRouter.swift */; };
+		11B864152ACD21E300409740 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B864142ACD21E200409740 /* HomeViewModel.swift */; };
+		11F39E502ACB4010006F4FF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F39E4F2ACB4010006F4FF8 /* AppDelegate.swift */; };
+		11F39E592ACB4011006F4FF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11F39E582ACB4011006F4FF8 /* Assets.xcassets */; };
+		11F39E672ACB4011006F4FF8 /* OWalletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F39E662ACB4011006F4FF8 /* OWalletTests.swift */; };
+		11F39E712ACB4011006F4FF8 /* OWalletUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F39E702ACB4011006F4FF8 /* OWalletUITests.swift */; };
+		11F39E732ACB4011006F4FF8 /* OWalletUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F39E722ACB4011006F4FF8 /* OWalletUITestsLaunchTests.swift */; };
+		11F39E852ACB4115006F4FF8 /* UICollectionView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F39E842ACB4115006F4FF8 /* UICollectionView+Ext.swift */; };
+		11F39E872ACB415A006F4FF8 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F39E862ACB415A006F4FF8 /* HomeCollectionViewCell.swift */; };
+		11F39E892ACB419F006F4FF8 /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F39E882ACB419F006F4FF8 /* Configurable.swift */; };
+		11F39E8C2ACB41F0006F4FF8 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 11F39E8B2ACB41F0006F4FF8 /* SnapKit */; };
+		11F39E8E2ACB4529006F4FF8 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F39E8D2ACB4529006F4FF8 /* ImageLoader.swift */; };
+		11F39E912ACB455A006F4FF8 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 11F39E902ACB455A006F4FF8 /* SDWebImage */; };
+		11F39E932ACB46A9006F4FF8 /* UICollectionViewCell+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F39E922ACB46A9006F4FF8 /* UICollectionViewCell+Ext.swift */; };
+		11F39E962ACB4A65006F4FF8 /* CoinResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F39E952ACB4A65006F4FF8 /* CoinResponse.swift */; };
+		11F39E992ACB4D09006F4FF8 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F39E982ACB4D09006F4FF8 /* AppSettings.swift */; };
+		11F39E9C2ACB4D51006F4FF8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F39E9B2ACB4D51006F4FF8 /* NetworkManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		11F39E632ACB4011006F4FF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11F39E442ACB4010006F4FF8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11F39E4B2ACB4010006F4FF8;
+			remoteInfo = OWallet;
+		};
+		11F39E6D2ACB4011006F4FF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11F39E442ACB4010006F4FF8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11F39E4B2ACB4010006F4FF8;
+			remoteInfo = OWallet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		112ECAA92ACB57FB00989AD3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		112ECAC02ACB586600989AD3 /* DetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailPresenter.swift; path = OWallet/Detail/DetailPresenter.swift; sourceTree = SOURCE_ROOT; };
+		112ECAC12ACB586600989AD3 /* DetailWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailWorker.swift; path = OWallet/Detail/DetailWorker.swift; sourceTree = SOURCE_ROOT; };
+		112ECAC32ACB586600989AD3 /* DetailRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailRouter.swift; path = OWallet/Detail/DetailRouter.swift; sourceTree = SOURCE_ROOT; };
+		112ECAC42ACB586600989AD3 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = OWallet/Detail/DetailViewController.swift; sourceTree = SOURCE_ROOT; };
+		112ECAC52ACB586600989AD3 /* DetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewModel.swift; path = OWallet/Detail/DetailViewModel.swift; sourceTree = SOURCE_ROOT; };
+		112ECAC62ACB586600989AD3 /* DetailInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailInteractor.swift; path = OWallet/Detail/DetailInteractor.swift; sourceTree = SOURCE_ROOT; };
+		112ECACF2ACB5B0D00989AD3 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		112ECAD12ACB63EA00989AD3 /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		112ECAD32ACB678C00989AD3 /* URLRequest+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Ext.swift"; sourceTree = "<group>"; };
+		112ECAD52ACB74B700989AD3 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		11B864082ACD1CB600409740 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
+		11B8640A2ACD1E7C00409740 /* Double+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Ext.swift"; sourceTree = "<group>"; };
+		11B8640C2ACD218200409740 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		11B8640E2ACD21A200409740 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		11B864102ACD21BB00409740 /* HomeWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorker.swift; sourceTree = "<group>"; };
+		11B864122ACD21CF00409740 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		11B864142ACD21E200409740 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		11F39E4C2ACB4010006F4FF8 /* OWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		11F39E4F2ACB4010006F4FF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		11F39E582ACB4011006F4FF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		11F39E5D2ACB4011006F4FF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11F39E622ACB4011006F4FF8 /* OWalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OWalletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		11F39E662ACB4011006F4FF8 /* OWalletTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OWalletTests.swift; sourceTree = "<group>"; };
+		11F39E6C2ACB4011006F4FF8 /* OWalletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OWalletUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		11F39E702ACB4011006F4FF8 /* OWalletUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OWalletUITests.swift; sourceTree = "<group>"; };
+		11F39E722ACB4011006F4FF8 /* OWalletUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OWalletUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		11F39E842ACB4115006F4FF8 /* UICollectionView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Ext.swift"; sourceTree = "<group>"; };
+		11F39E862ACB415A006F4FF8 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		11F39E882ACB419F006F4FF8 /* Configurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurable.swift; sourceTree = "<group>"; };
+		11F39E8D2ACB4529006F4FF8 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		11F39E922ACB46A9006F4FF8 /* UICollectionViewCell+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Ext.swift"; sourceTree = "<group>"; };
+		11F39E952ACB4A65006F4FF8 /* CoinResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinResponse.swift; sourceTree = "<group>"; };
+		11F39E972ACB4C78006F4FF8 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		11F39E982ACB4D09006F4FF8 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		11F39E9B2ACB4D51006F4FF8 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11F39E492ACB4010006F4FF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11F39E912ACB455A006F4FF8 /* SDWebImage in Frameworks */,
+				11F39E8C2ACB41F0006F4FF8 /* SnapKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11F39E5F2ACB4011006F4FF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11F39E692ACB4011006F4FF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		112ECAA82ACB57ED00989AD3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				112ECAA92ACB57FB00989AD3 /* HomeViewController.swift */,
+				11B8640C2ACD218200409740 /* HomeInteractor.swift */,
+				11B8640E2ACD21A200409740 /* HomePresenter.swift */,
+				11B864102ACD21BB00409740 /* HomeWorker.swift */,
+				11B864122ACD21CF00409740 /* HomeRouter.swift */,
+				11B864142ACD21E200409740 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		112ECACE2ACB58BC00989AD3 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				112ECAC62ACB586600989AD3 /* DetailInteractor.swift */,
+				112ECAC02ACB586600989AD3 /* DetailPresenter.swift */,
+				112ECAC32ACB586600989AD3 /* DetailRouter.swift */,
+				112ECAC42ACB586600989AD3 /* DetailViewController.swift */,
+				112ECAC52ACB586600989AD3 /* DetailViewModel.swift */,
+				112ECAC12ACB586600989AD3 /* DetailWorker.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		11F39E432ACB4010006F4FF8 = {
+			isa = PBXGroup;
+			children = (
+				11F39E972ACB4C78006F4FF8 /* Config.xcconfig */,
+				11F39E4E2ACB4010006F4FF8 /* OWallet */,
+				11F39E652ACB4011006F4FF8 /* OWalletTests */,
+				11F39E6F2ACB4011006F4FF8 /* OWalletUITests */,
+				11F39E4D2ACB4010006F4FF8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		11F39E4D2ACB4010006F4FF8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11F39E4C2ACB4010006F4FF8 /* OWallet.app */,
+				11F39E622ACB4011006F4FF8 /* OWalletTests.xctest */,
+				11F39E6C2ACB4011006F4FF8 /* OWalletUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11F39E4E2ACB4010006F4FF8 /* OWallet */ = {
+			isa = PBXGroup;
+			children = (
+				112ECACE2ACB58BC00989AD3 /* Detail */,
+				112ECAA82ACB57ED00989AD3 /* Home */,
+				11F39E9A2ACB4D30006F4FF8 /* Networking */,
+				11F39E942ACB4A59006F4FF8 /* Responses */,
+				11F39E832ACB410A006F4FF8 /* Extensions */,
+				11F39E4F2ACB4010006F4FF8 /* AppDelegate.swift */,
+				11F39E582ACB4011006F4FF8 /* Assets.xcassets */,
+				11F39E5D2ACB4011006F4FF8 /* Info.plist */,
+				11F39E862ACB415A006F4FF8 /* HomeCollectionViewCell.swift */,
+				11F39E8D2ACB4529006F4FF8 /* ImageLoader.swift */,
+				11F39E982ACB4D09006F4FF8 /* AppSettings.swift */,
+				112ECACF2ACB5B0D00989AD3 /* BaseViewController.swift */,
+			);
+			path = OWallet;
+			sourceTree = "<group>";
+		};
+		11F39E652ACB4011006F4FF8 /* OWalletTests */ = {
+			isa = PBXGroup;
+			children = (
+				11F39E662ACB4011006F4FF8 /* OWalletTests.swift */,
+			);
+			path = OWalletTests;
+			sourceTree = "<group>";
+		};
+		11F39E6F2ACB4011006F4FF8 /* OWalletUITests */ = {
+			isa = PBXGroup;
+			children = (
+				11F39E702ACB4011006F4FF8 /* OWalletUITests.swift */,
+				11F39E722ACB4011006F4FF8 /* OWalletUITestsLaunchTests.swift */,
+			);
+			path = OWalletUITests;
+			sourceTree = "<group>";
+		};
+		11F39E832ACB410A006F4FF8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				11F39E842ACB4115006F4FF8 /* UICollectionView+Ext.swift */,
+				11F39E882ACB419F006F4FF8 /* Configurable.swift */,
+				11F39E922ACB46A9006F4FF8 /* UICollectionViewCell+Ext.swift */,
+				112ECAD32ACB678C00989AD3 /* URLRequest+Ext.swift */,
+				112ECAD52ACB74B700989AD3 /* String+Ext.swift */,
+				11B864082ACD1CB600409740 /* UIColor+Ext.swift */,
+				11B8640A2ACD1E7C00409740 /* Double+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		11F39E942ACB4A59006F4FF8 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				11F39E952ACB4A65006F4FF8 /* CoinResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		11F39E9A2ACB4D30006F4FF8 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				11F39E9B2ACB4D51006F4FF8 /* NetworkManager.swift */,
+				112ECAD12ACB63EA00989AD3 /* RequestBuilder.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		11F39E4B2ACB4010006F4FF8 /* OWallet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11F39E762ACB4011006F4FF8 /* Build configuration list for PBXNativeTarget "OWallet" */;
+			buildPhases = (
+				11F39E482ACB4010006F4FF8 /* Sources */,
+				11F39E492ACB4010006F4FF8 /* Frameworks */,
+				11F39E4A2ACB4010006F4FF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OWallet;
+			packageProductDependencies = (
+				11F39E8B2ACB41F0006F4FF8 /* SnapKit */,
+				11F39E902ACB455A006F4FF8 /* SDWebImage */,
+			);
+			productName = OWallet;
+			productReference = 11F39E4C2ACB4010006F4FF8 /* OWallet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		11F39E612ACB4011006F4FF8 /* OWalletTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11F39E792ACB4011006F4FF8 /* Build configuration list for PBXNativeTarget "OWalletTests" */;
+			buildPhases = (
+				11F39E5E2ACB4011006F4FF8 /* Sources */,
+				11F39E5F2ACB4011006F4FF8 /* Frameworks */,
+				11F39E602ACB4011006F4FF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11F39E642ACB4011006F4FF8 /* PBXTargetDependency */,
+			);
+			name = OWalletTests;
+			productName = OWalletTests;
+			productReference = 11F39E622ACB4011006F4FF8 /* OWalletTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		11F39E6B2ACB4011006F4FF8 /* OWalletUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11F39E7C2ACB4011006F4FF8 /* Build configuration list for PBXNativeTarget "OWalletUITests" */;
+			buildPhases = (
+				11F39E682ACB4011006F4FF8 /* Sources */,
+				11F39E692ACB4011006F4FF8 /* Frameworks */,
+				11F39E6A2ACB4011006F4FF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11F39E6E2ACB4011006F4FF8 /* PBXTargetDependency */,
+			);
+			name = OWalletUITests;
+			productName = OWalletUITests;
+			productReference = 11F39E6C2ACB4011006F4FF8 /* OWalletUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		11F39E442ACB4010006F4FF8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					11F39E4B2ACB4010006F4FF8 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					11F39E612ACB4011006F4FF8 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 11F39E4B2ACB4010006F4FF8;
+					};
+					11F39E6B2ACB4011006F4FF8 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 11F39E4B2ACB4010006F4FF8;
+					};
+				};
+			};
+			buildConfigurationList = 11F39E472ACB4010006F4FF8 /* Build configuration list for PBXProject "OWallet" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 11F39E432ACB4010006F4FF8;
+			packageReferences = (
+				11F39E8A2ACB41F0006F4FF8 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				11F39E8F2ACB455A006F4FF8 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
+			productRefGroup = 11F39E4D2ACB4010006F4FF8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11F39E4B2ACB4010006F4FF8 /* OWallet */,
+				11F39E612ACB4011006F4FF8 /* OWalletTests */,
+				11F39E6B2ACB4011006F4FF8 /* OWalletUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11F39E4A2ACB4010006F4FF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11F39E592ACB4011006F4FF8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11F39E602ACB4011006F4FF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11F39E6A2ACB4011006F4FF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11F39E482ACB4010006F4FF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11F39E892ACB419F006F4FF8 /* Configurable.swift in Sources */,
+				11F39E932ACB46A9006F4FF8 /* UICollectionViewCell+Ext.swift in Sources */,
+				11F39E9C2ACB4D51006F4FF8 /* NetworkManager.swift in Sources */,
+				11F39E8E2ACB4529006F4FF8 /* ImageLoader.swift in Sources */,
+				112ECAD02ACB5B0D00989AD3 /* BaseViewController.swift in Sources */,
+				112ECACA2ACB586600989AD3 /* DetailRouter.swift in Sources */,
+				11B8640F2ACD21A200409740 /* HomePresenter.swift in Sources */,
+				112ECACB2ACB586600989AD3 /* DetailViewController.swift in Sources */,
+				11B864132ACD21CF00409740 /* HomeRouter.swift in Sources */,
+				112ECAD42ACB678C00989AD3 /* URLRequest+Ext.swift in Sources */,
+				11F39E852ACB4115006F4FF8 /* UICollectionView+Ext.swift in Sources */,
+				112ECACC2ACB586600989AD3 /* DetailViewModel.swift in Sources */,
+				11F39E992ACB4D09006F4FF8 /* AppSettings.swift in Sources */,
+				112ECAAA2ACB57FB00989AD3 /* HomeViewController.swift in Sources */,
+				11B864092ACD1CB700409740 /* UIColor+Ext.swift in Sources */,
+				112ECAD22ACB63EA00989AD3 /* RequestBuilder.swift in Sources */,
+				112ECAD62ACB74B700989AD3 /* String+Ext.swift in Sources */,
+				11B8640B2ACD1E7C00409740 /* Double+Ext.swift in Sources */,
+				112ECAC82ACB586600989AD3 /* DetailWorker.swift in Sources */,
+				11F39E962ACB4A65006F4FF8 /* CoinResponse.swift in Sources */,
+				11F39E502ACB4010006F4FF8 /* AppDelegate.swift in Sources */,
+				11B864112ACD21BB00409740 /* HomeWorker.swift in Sources */,
+				11B864152ACD21E300409740 /* HomeViewModel.swift in Sources */,
+				112ECACD2ACB586600989AD3 /* DetailInteractor.swift in Sources */,
+				11F39E872ACB415A006F4FF8 /* HomeCollectionViewCell.swift in Sources */,
+				112ECAC72ACB586600989AD3 /* DetailPresenter.swift in Sources */,
+				11B8640D2ACD218200409740 /* HomeInteractor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11F39E5E2ACB4011006F4FF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11F39E672ACB4011006F4FF8 /* OWalletTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11F39E682ACB4011006F4FF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11F39E712ACB4011006F4FF8 /* OWalletUITests.swift in Sources */,
+				11F39E732ACB4011006F4FF8 /* OWalletUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		11F39E642ACB4011006F4FF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11F39E4B2ACB4010006F4FF8 /* OWallet */;
+			targetProxy = 11F39E632ACB4011006F4FF8 /* PBXContainerItemProxy */;
+		};
+		11F39E6E2ACB4011006F4FF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11F39E4B2ACB4010006F4FF8 /* OWallet */;
+			targetProxy = 11F39E6D2ACB4011006F4FF8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		11F39E742ACB4011006F4FF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		11F39E752ACB4011006F4FF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		11F39E772ACB4011006F4FF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11F39E972ACB4C78006F4FF8 /* Config.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JFJ87QUY27;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OWallet/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = per.OWallet.app.OWallet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		11F39E782ACB4011006F4FF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JFJ87QUY27;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OWallet/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = per.OWallet.app.OWallet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		11F39E7A2ACB4011006F4FF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JFJ87QUY27;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = per.OWallet.app.OWalletTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OWallet.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OWallet";
+			};
+			name = Debug;
+		};
+		11F39E7B2ACB4011006F4FF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JFJ87QUY27;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = per.OWallet.app.OWalletTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OWallet.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OWallet";
+			};
+			name = Release;
+		};
+		11F39E7D2ACB4011006F4FF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JFJ87QUY27;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = per.OWallet.app.OWalletUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OWallet;
+			};
+			name = Debug;
+		};
+		11F39E7E2ACB4011006F4FF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JFJ87QUY27;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = per.OWallet.app.OWalletUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OWallet;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11F39E472ACB4010006F4FF8 /* Build configuration list for PBXProject "OWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11F39E742ACB4011006F4FF8 /* Debug */,
+				11F39E752ACB4011006F4FF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11F39E762ACB4011006F4FF8 /* Build configuration list for PBXNativeTarget "OWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11F39E772ACB4011006F4FF8 /* Debug */,
+				11F39E782ACB4011006F4FF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11F39E792ACB4011006F4FF8 /* Build configuration list for PBXNativeTarget "OWalletTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11F39E7A2ACB4011006F4FF8 /* Debug */,
+				11F39E7B2ACB4011006F4FF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11F39E7C2ACB4011006F4FF8 /* Build configuration list for PBXNativeTarget "OWalletUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11F39E7D2ACB4011006F4FF8 /* Debug */,
+				11F39E7E2ACB4011006F4FF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		11F39E8A2ACB41F0006F4FF8 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = exactVersion;
+				version = 5.6.0;
+			};
+		};
+		11F39E8F2ACB455A006F4FF8 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = exactVersion;
+				version = 5.18.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		11F39E8B2ACB41F0006F4FF8 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11F39E8A2ACB41F0006F4FF8 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		11F39E902ACB455A006F4FF8 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11F39E8F2ACB455A006F4FF8 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 11F39E442ACB4010006F4FF8 /* Project object */;
+}
