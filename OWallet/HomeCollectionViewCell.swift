@@ -36,10 +36,10 @@ import SnapKit
         $0.textColor = .black
         $0.font = .systemFont(ofSize: 14)
     }
-    lazy var profit = UILabel().configure {
+    lazy var change = UILabel().configure {
         $0.font = .systemFont(ofSize: 10)
     }
-    private lazy var currencyStack = UIStackView(arrangedSubviews: [price, profit]).configure {
+    private lazy var currencyStack = UIStackView(arrangedSubviews: [price, change]).configure {
         $0.axis = .vertical
         $0.alignment = .trailing
         $0.spacing = 4
@@ -87,8 +87,8 @@ import SnapKit
         coinSymbol.text = viewModel.coinSymbol
         coinName.text = viewModel.coinName
         price.text = viewModel.price
-        profit.text = viewModel.profit
-        viewModel.isProfitMade ? (profit.textColor = .systemGreen) : (profit.textColor = .systemOrange)
+        change.text = viewModel.change
+        change.textColor = viewModel.isProfited ? .systemGreen : .systemOrange
         
     }
     
@@ -98,7 +98,7 @@ import SnapKit
         coinSymbol.text = ""
         coinName.text = ""
         price.text = ""
-        profit.text = ""
+        change.text = ""
     }
 }
 
@@ -108,7 +108,7 @@ extension HomeCollectionViewCell {
         let coinSymbol: String
         let coinName: String
         let price: String
-        let profit: String
-        let isProfitMade: Bool
+        let change: String
+        let isProfited: Bool
     }
 }

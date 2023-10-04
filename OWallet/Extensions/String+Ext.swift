@@ -12,14 +12,3 @@ extension String {
         return Double(self)
     }
 }
-
-extension Double {
-    func convertToTwoDecimalString() -> String? {
-        let formatter = NumberFormatter()
-        formatter.minimumFractionDigits = 2
-        formatter.maximumFractionDigits = 2
-        formatter.locale = Locale.current
-        formatter.numberStyle = .decimal
-        return formatter.string(for: self)
-    }
-}
