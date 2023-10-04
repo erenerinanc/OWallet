@@ -1,0 +1,10 @@
+//
+//  Config.xcconfig
+//  OWallet
+//
+//  Created by Eren Erinanç on 2.10.2023.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+BASE_URL = psp-merchantpanel-service-sandbox.ozanodeme.com.tr/api/v1/dummy/coins
