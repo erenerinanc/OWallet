@@ -5,11 +5,6 @@
 //  Created by Eren Erinanç on 4.10.2023.
 //
 
-enum ImageFormat: String {
-    case svg = ".svg"
-    case png = ".png"
-}
-
 protocol HomePresentationLogic: AnyObject {
     func presentCoins(coins: [Coin], listingType: ListingType?, sortingType: SortingType?)
     func presentError(title: String, message: String)
@@ -33,7 +28,7 @@ class HomePresenter: HomePresentationLogic {
                                sortingType: SortingType?) -> [HomeCollectionViewCell.ViewModel]? {
 
         let cellModels = coins.compactMap {
-            var change = ""
+            var change = Constants.dolar
             var isProfited = false
             var iconURL = ""
     
@@ -45,17 +40,11 @@ class HomePresenter: HomePresentationLogic {
                 } else {
                     isProfited = false
                 }
-                change = changeString
+                change += changeString
             }
             
             if let icon = $0.iconURL {
-                if icon.hasSuffix(ImageFormat.svg.rawValue) {
-                    iconURL = icon.replacingOccurrences(of: ImageFormat.svg.rawValue, with: ImageFormat.png.rawValue)
-                } else if !icon.hasSuffix(ImageFormat.png.rawValue) && !(icon.hasSuffix(ImageFormat.svg.rawValue)) {
-                    iconURL = icon + ImageFormat.png.rawValue
-                } else {
-                    iconURL = icon
-                }
+                iconURL = icon.formatIconURL()
             }
             
             let (value, valueDouble) = getValue(coin: $0, listingType: listingType ?? .price, sortingType: sortingType)
@@ -80,25 +69,25 @@ class HomePresenter: HomePresentationLogic {
     }
     
     private func getValue(coin: Coin, listingType: ListingType, sortingType: SortingType?) -> (String, Double) {
-        var value = ""
+        var value = Constants.dolar
         var valueDouble = 0.0
         switch listingType {
         case .volume24h:
             if let volumeDouble = coin.the24HVolume?.convertToDouble(),
                let volumeString = volumeDouble.convertToTwoDecimalString() {
-                value = volumeString
+                value += volumeString
                 valueDouble = volumeDouble
             }
         case .marketCap:
             if let marketDouble = coin.marketCap?.convertToDouble(),
                let marketString = marketDouble.convertToTwoDecimalString() {
-                value = marketString
+                value += marketString
                 valueDouble = marketDouble
             }
         case .price:
             if let priceDouble = coin.price?.convertToDouble(),
                let priceString = priceDouble.convertToTwoDecimalString() {
-                value = priceString
+                value += priceString
                 valueDouble = priceDouble
             }
         }

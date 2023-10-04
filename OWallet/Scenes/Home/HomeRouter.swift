@@ -10,6 +10,7 @@ import UIKit
 
 protocol HomeRoutingLogic {
     func openModal(type: ModalType, selectedIndex: Int?)
+    func routeToDetail(index: Int)
 }
 
 protocol HomeDataPassing: AnyObject {
@@ -26,5 +27,13 @@ class HomeRouter: HomeRoutingLogic,
         let vc = ModalController(type: type, selectedIndex: selectedIndex)
         vc.delegate = viewController as (any ModalControllerDelegate)?
         viewController?.showDetailViewController(vc, sender: self)
+    }
+    
+    func routeToDetail(index: Int) {
+        guard let coin = dataStore?.coins?[index] else { return }
+        
+        let vc = DetailViewController(businessModel: DetailBusinessModel(coin: coin))
+        viewController?.show(vc, sender: self)
+ 
     }
 }

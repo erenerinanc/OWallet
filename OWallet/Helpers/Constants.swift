@@ -9,4 +9,8 @@ import Foundation
 
 struct Constants {
     static var homeTitle = "Ranking List"
+    static var currentPrice = "Current Price"
+    static var detailHighest = "Highest Value:"
+    static var detailLowest = "Lowest Value:"
+    static var dolar = "$"
 }

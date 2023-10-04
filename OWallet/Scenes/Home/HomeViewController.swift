@@ -115,6 +115,10 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         cell.set(viewModel: cellModel)
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        router?.routeToDetail(index: indexPath.item)
+    }
 }
 
 // MARK: - ModalControllerDelegate

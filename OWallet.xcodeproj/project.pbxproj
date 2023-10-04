@@ -19,22 +19,25 @@
 		11B864112ACD21BB00409740 /* HomeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B864102ACD21BB00409740 /* HomeWorker.swift */; };
 		11B864132ACD21CF00409740 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B864122ACD21CF00409740 /* HomeRouter.swift */; };
 		11B864152ACD21E300409740 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B864142ACD21E200409740 /* HomeViewModel.swift */; };
-		11B864182ACD252D00409740 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 11B864172ACD252D00409740 /* Nuke */; };
 		11B8641B2ACD384300409740 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B8641A2ACD384300409740 /* Constants.swift */; };
 		11B864252ACD392800409740 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B8641F2ACD392800409740 /* DetailViewModel.swift */; };
-		11B864262ACD392800409740 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B864202ACD392800409740 /* DetailPresenter.swift */; };
-		11B864272ACD392800409740 /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B864212ACD392800409740 /* DetailRouter.swift */; };
-		11B864282ACD392800409740 /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B864222ACD392800409740 /* DetailInteractor.swift */; };
 		11B864292ACD392800409740 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B864232ACD392800409740 /* DetailViewController.swift */; };
-		11B8642A2ACD392800409740 /* DetailWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B864242ACD392800409740 /* DetailWorker.swift */; };
 		11B8642C2ACD3EF700409740 /* ModalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B8642B2ACD3EF700409740 /* ModalController.swift */; };
 		11B8642E2ACD46F900409740 /* ModalTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B8642D2ACD46F900409740 /* ModalTypes.swift */; };
 		11B864302ACD720A00409740 /* ModalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B8642F2ACD720A00409740 /* ModalCollectionViewCell.swift */; };
+		11EDA5E02ACDD1D600B83DA8 /* HomeInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EDA5DB2ACDD1D600B83DA8 /* HomeInteractorTests.swift */; };
+		11EDA5E12ACDD1D600B83DA8 /* HomeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EDA5DE2ACDD1D600B83DA8 /* HomeViewControllerTests.swift */; };
+		11EDA5E22ACDD1D600B83DA8 /* HomePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EDA5DF2ACDD1D600B83DA8 /* HomePresenterTests.swift */; };
+		11EDA5E32ACDD1D600B83DA8 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EDA5DC2ACDD1D600B83DA8 /* MockURLProtocol.swift */; };
+		11EDA5E92ACDD1DF00B83DA8 /* HomeWorkingLogicSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EDA5E82ACDD1DE00B83DA8 /* HomeWorkingLogicSpy.swift */; };
+		11EDA5EA2ACDD1DF00B83DA8 /* HomeDisplayLogicSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EDA5E42ACDD1DE00B83DA8 /* HomeDisplayLogicSpy.swift */; };
+		11EDA5EB2ACDD1DF00B83DA8 /* HomePresentationLogicSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EDA5E52ACDD1DE00B83DA8 /* HomePresentationLogicSpy.swift */; };
+		11EDA5EC2ACDD1DF00B83DA8 /* HomeBusinessLogicSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EDA5E72ACDD1DE00B83DA8 /* HomeBusinessLogicSpy.swift */; };
+		11EDA5ED2ACDD1DF00B83DA8 /* HomeRoutingLogicSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EDA5E62ACDD1DE00B83DA8 /* HomeRoutingLogicSpy.swift */; };
+		11EDA5F22ACDD29500B83DA8 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 11EDA5F12ACDD29500B83DA8 /* SDWebImage */; };
+		11EDA5F42ACDD30700B83DA8 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 11EDA5F32ACDD30700B83DA8 /* SDWebImage */; };
 		11F39E502ACB4010006F4FF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F39E4F2ACB4010006F4FF8 /* AppDelegate.swift */; };
 		11F39E592ACB4011006F4FF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11F39E582ACB4011006F4FF8 /* Assets.xcassets */; };
-		11F39E672ACB4011006F4FF8 /* OWalletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F39E662ACB4011006F4FF8 /* OWalletTests.swift */; };
-		11F39E712ACB4011006F4FF8 /* OWalletUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F39E702ACB4011006F4FF8 /* OWalletUITests.swift */; };
-		11F39E732ACB4011006F4FF8 /* OWalletUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F39E722ACB4011006F4FF8 /* OWalletUITestsLaunchTests.swift */; };
 		11F39E852ACB4115006F4FF8 /* UICollectionView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F39E842ACB4115006F4FF8 /* UICollectionView+Ext.swift */; };
 		11F39E872ACB415A006F4FF8 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F39E862ACB415A006F4FF8 /* HomeCollectionViewCell.swift */; };
 		11F39E892ACB419F006F4FF8 /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F39E882ACB419F006F4FF8 /* Configurable.swift */; };
@@ -47,14 +50,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		11F39E632ACB4011006F4FF8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 11F39E442ACB4010006F4FF8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 11F39E4B2ACB4010006F4FF8;
-			remoteInfo = OWallet;
-		};
-		11F39E6D2ACB4011006F4FF8 /* PBXContainerItemProxy */ = {
+		11EDA5D42ACDD0ED00B83DA8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 11F39E442ACB4010006F4FF8 /* Project object */;
 			proxyType = 1;
@@ -78,23 +74,25 @@
 		11B864142ACD21E200409740 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		11B8641A2ACD384300409740 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		11B8641F2ACD392800409740 /* DetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
-		11B864202ACD392800409740 /* DetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
-		11B864212ACD392800409740 /* DetailRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
-		11B864222ACD392800409740 /* DetailInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
 		11B864232ACD392800409740 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		11B864242ACD392800409740 /* DetailWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailWorker.swift; sourceTree = "<group>"; };
 		11B8642B2ACD3EF700409740 /* ModalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalController.swift; sourceTree = "<group>"; };
 		11B8642D2ACD46F900409740 /* ModalTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalTypes.swift; sourceTree = "<group>"; };
 		11B8642F2ACD720A00409740 /* ModalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalCollectionViewCell.swift; sourceTree = "<group>"; };
+		11EDA5D02ACDD0ED00B83DA8 /* OWalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OWalletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		11EDA5DB2ACDD1D600B83DA8 /* HomeInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractorTests.swift; sourceTree = "<group>"; };
+		11EDA5DC2ACDD1D600B83DA8 /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
+		11EDA5DD2ACDD1D600B83DA8 /* home.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = home.json; sourceTree = "<group>"; };
+		11EDA5DE2ACDD1D600B83DA8 /* HomeViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerTests.swift; sourceTree = "<group>"; };
+		11EDA5DF2ACDD1D600B83DA8 /* HomePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenterTests.swift; sourceTree = "<group>"; };
+		11EDA5E42ACDD1DE00B83DA8 /* HomeDisplayLogicSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDisplayLogicSpy.swift; sourceTree = "<group>"; };
+		11EDA5E52ACDD1DE00B83DA8 /* HomePresentationLogicSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresentationLogicSpy.swift; sourceTree = "<group>"; };
+		11EDA5E62ACDD1DE00B83DA8 /* HomeRoutingLogicSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRoutingLogicSpy.swift; sourceTree = "<group>"; };
+		11EDA5E72ACDD1DE00B83DA8 /* HomeBusinessLogicSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBusinessLogicSpy.swift; sourceTree = "<group>"; };
+		11EDA5E82ACDD1DE00B83DA8 /* HomeWorkingLogicSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorkingLogicSpy.swift; sourceTree = "<group>"; };
 		11F39E4C2ACB4010006F4FF8 /* OWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11F39E4F2ACB4010006F4FF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11F39E582ACB4011006F4FF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11F39E5D2ACB4011006F4FF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		11F39E622ACB4011006F4FF8 /* OWalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OWalletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		11F39E662ACB4011006F4FF8 /* OWalletTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OWalletTests.swift; sourceTree = "<group>"; };
-		11F39E6C2ACB4011006F4FF8 /* OWalletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OWalletUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		11F39E702ACB4011006F4FF8 /* OWalletUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OWalletUITests.swift; sourceTree = "<group>"; };
-		11F39E722ACB4011006F4FF8 /* OWalletUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OWalletUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		11F39E842ACB4115006F4FF8 /* UICollectionView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Ext.swift"; sourceTree = "<group>"; };
 		11F39E862ACB415A006F4FF8 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		11F39E882ACB419F006F4FF8 /* Configurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurable.swift; sourceTree = "<group>"; };
@@ -107,26 +105,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		11EDA5CD2ACDD0ED00B83DA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11EDA5F42ACDD30700B83DA8 /* SDWebImage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		11F39E492ACB4010006F4FF8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11B864182ACD252D00409740 /* Nuke in Frameworks */,
+				11EDA5F22ACDD29500B83DA8 /* SDWebImage in Frameworks */,
 				11F39E8C2ACB41F0006F4FF8 /* SnapKit in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		11F39E5F2ACB4011006F4FF8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		11F39E692ACB4011006F4FF8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,12 +141,8 @@
 		112ECACE2ACB58BC00989AD3 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
-				11B864222ACD392800409740 /* DetailInteractor.swift */,
-				11B864202ACD392800409740 /* DetailPresenter.swift */,
-				11B864212ACD392800409740 /* DetailRouter.swift */,
 				11B864232ACD392800409740 /* DetailViewController.swift */,
 				11B8641F2ACD392800409740 /* DetailViewModel.swift */,
-				11B864242ACD392800409740 /* DetailWorker.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -201,14 +189,38 @@
 			path = Scenes;
 			sourceTree = "<group>";
 		};
+		11EDA59B2ACDC24F00B83DA8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		11EDA5D12ACDD0ED00B83DA8 /* OWalletTests */ = {
+			isa = PBXGroup;
+			children = (
+				11EDA5DD2ACDD1D600B83DA8 /* home.json */,
+				11EDA5DB2ACDD1D600B83DA8 /* HomeInteractorTests.swift */,
+				11EDA5DF2ACDD1D600B83DA8 /* HomePresenterTests.swift */,
+				11EDA5DE2ACDD1D600B83DA8 /* HomeViewControllerTests.swift */,
+				11EDA5DC2ACDD1D600B83DA8 /* MockURLProtocol.swift */,
+				11EDA5E72ACDD1DE00B83DA8 /* HomeBusinessLogicSpy.swift */,
+				11EDA5E42ACDD1DE00B83DA8 /* HomeDisplayLogicSpy.swift */,
+				11EDA5E52ACDD1DE00B83DA8 /* HomePresentationLogicSpy.swift */,
+				11EDA5E62ACDD1DE00B83DA8 /* HomeRoutingLogicSpy.swift */,
+				11EDA5E82ACDD1DE00B83DA8 /* HomeWorkingLogicSpy.swift */,
+			);
+			path = OWalletTests;
+			sourceTree = "<group>";
+		};
 		11F39E432ACB4010006F4FF8 = {
 			isa = PBXGroup;
 			children = (
 				11F39E972ACB4C78006F4FF8 /* Config.xcconfig */,
 				11F39E4E2ACB4010006F4FF8 /* OWallet */,
-				11F39E652ACB4011006F4FF8 /* OWalletTests */,
-				11F39E6F2ACB4011006F4FF8 /* OWalletUITests */,
+				11EDA5D12ACDD0ED00B83DA8 /* OWalletTests */,
 				11F39E4D2ACB4010006F4FF8 /* Products */,
+				11EDA59B2ACDC24F00B83DA8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -216,8 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				11F39E4C2ACB4010006F4FF8 /* OWallet.app */,
-				11F39E622ACB4011006F4FF8 /* OWalletTests.xctest */,
-				11F39E6C2ACB4011006F4FF8 /* OWalletUITests.xctest */,
+				11EDA5D02ACDD0ED00B83DA8 /* OWalletTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -233,23 +244,6 @@
 				11F39E5D2ACB4011006F4FF8 /* Info.plist */,
 			);
 			path = OWallet;
-			sourceTree = "<group>";
-		};
-		11F39E652ACB4011006F4FF8 /* OWalletTests */ = {
-			isa = PBXGroup;
-			children = (
-				11F39E662ACB4011006F4FF8 /* OWalletTests.swift */,
-			);
-			path = OWalletTests;
-			sourceTree = "<group>";
-		};
-		11F39E6F2ACB4011006F4FF8 /* OWalletUITests */ = {
-			isa = PBXGroup;
-			children = (
-				11F39E702ACB4011006F4FF8 /* OWalletUITests.swift */,
-				11F39E722ACB4011006F4FF8 /* OWalletUITestsLaunchTests.swift */,
-			);
-			path = OWalletUITests;
 			sourceTree = "<group>";
 		};
 		11F39E832ACB410A006F4FF8 /* Extensions */ = {
@@ -286,6 +280,27 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		11EDA5CF2ACDD0ED00B83DA8 /* OWalletTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11EDA5D62ACDD0ED00B83DA8 /* Build configuration list for PBXNativeTarget "OWalletTests" */;
+			buildPhases = (
+				11EDA5CC2ACDD0ED00B83DA8 /* Sources */,
+				11EDA5CD2ACDD0ED00B83DA8 /* Frameworks */,
+				11EDA5CE2ACDD0ED00B83DA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11EDA5D52ACDD0ED00B83DA8 /* PBXTargetDependency */,
+			);
+			name = OWalletTests;
+			packageProductDependencies = (
+				11EDA5F32ACDD30700B83DA8 /* SDWebImage */,
+			);
+			productName = OWalletTests;
+			productReference = 11EDA5D02ACDD0ED00B83DA8 /* OWalletTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		11F39E4B2ACB4010006F4FF8 /* OWallet */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11F39E762ACB4011006F4FF8 /* Build configuration list for PBXNativeTarget "OWallet" */;
@@ -301,47 +316,11 @@
 			name = OWallet;
 			packageProductDependencies = (
 				11F39E8B2ACB41F0006F4FF8 /* SnapKit */,
-				11B864172ACD252D00409740 /* Nuke */,
+				11EDA5F12ACDD29500B83DA8 /* SDWebImage */,
 			);
 			productName = OWallet;
 			productReference = 11F39E4C2ACB4010006F4FF8 /* OWallet.app */;
 			productType = "com.apple.product-type.application";
-		};
-		11F39E612ACB4011006F4FF8 /* OWalletTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 11F39E792ACB4011006F4FF8 /* Build configuration list for PBXNativeTarget "OWalletTests" */;
-			buildPhases = (
-				11F39E5E2ACB4011006F4FF8 /* Sources */,
-				11F39E5F2ACB4011006F4FF8 /* Frameworks */,
-				11F39E602ACB4011006F4FF8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				11F39E642ACB4011006F4FF8 /* PBXTargetDependency */,
-			);
-			name = OWalletTests;
-			productName = OWalletTests;
-			productReference = 11F39E622ACB4011006F4FF8 /* OWalletTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		11F39E6B2ACB4011006F4FF8 /* OWalletUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 11F39E7C2ACB4011006F4FF8 /* Build configuration list for PBXNativeTarget "OWalletUITests" */;
-			buildPhases = (
-				11F39E682ACB4011006F4FF8 /* Sources */,
-				11F39E692ACB4011006F4FF8 /* Frameworks */,
-				11F39E6A2ACB4011006F4FF8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				11F39E6E2ACB4011006F4FF8 /* PBXTargetDependency */,
-			);
-			name = OWalletUITests;
-			productName = OWalletUITests;
-			productReference = 11F39E6C2ACB4011006F4FF8 /* OWalletUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -353,16 +332,12 @@
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
+					11EDA5CF2ACDD0ED00B83DA8 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 11F39E4B2ACB4010006F4FF8;
+					};
 					11F39E4B2ACB4010006F4FF8 = {
 						CreatedOnToolsVersion = 14.2;
-					};
-					11F39E612ACB4011006F4FF8 = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = 11F39E4B2ACB4010006F4FF8;
-					};
-					11F39E6B2ACB4011006F4FF8 = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = 11F39E4B2ACB4010006F4FF8;
 					};
 				};
 			};
@@ -377,20 +352,26 @@
 			mainGroup = 11F39E432ACB4010006F4FF8;
 			packageReferences = (
 				11F39E8A2ACB41F0006F4FF8 /* XCRemoteSwiftPackageReference "SnapKit" */,
-				11B864162ACD252D00409740 /* XCRemoteSwiftPackageReference "Nuke" */,
+				11EDA5F02ACDD29500B83DA8 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = 11F39E4D2ACB4010006F4FF8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				11F39E4B2ACB4010006F4FF8 /* OWallet */,
-				11F39E612ACB4011006F4FF8 /* OWalletTests */,
-				11F39E6B2ACB4011006F4FF8 /* OWalletUITests */,
+				11EDA5CF2ACDD0ED00B83DA8 /* OWalletTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		11EDA5CE2ACDD0ED00B83DA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		11F39E4A2ACB4010006F4FF8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -399,23 +380,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		11F39E602ACB4011006F4FF8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		11F39E6A2ACB4011006F4FF8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		11EDA5CC2ACDD0ED00B83DA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11EDA5EB2ACDD1DF00B83DA8 /* HomePresentationLogicSpy.swift in Sources */,
+				11EDA5E12ACDD1D600B83DA8 /* HomeViewControllerTests.swift in Sources */,
+				11EDA5E32ACDD1D600B83DA8 /* MockURLProtocol.swift in Sources */,
+				11EDA5EC2ACDD1DF00B83DA8 /* HomeBusinessLogicSpy.swift in Sources */,
+				11EDA5EA2ACDD1DF00B83DA8 /* HomeDisplayLogicSpy.swift in Sources */,
+				11EDA5E02ACDD1D600B83DA8 /* HomeInteractorTests.swift in Sources */,
+				11EDA5E92ACDD1DF00B83DA8 /* HomeWorkingLogicSpy.swift in Sources */,
+				11EDA5E22ACDD1D600B83DA8 /* HomePresenterTests.swift in Sources */,
+				11EDA5ED2ACDD1DF00B83DA8 /* HomeRoutingLogicSpy.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		11F39E482ACB4010006F4FF8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -430,13 +413,11 @@
 				112ECAD02ACB5B0D00989AD3 /* BaseViewController.swift in Sources */,
 				11B8642E2ACD46F900409740 /* ModalTypes.swift in Sources */,
 				11B8640F2ACD21A200409740 /* HomePresenter.swift in Sources */,
-				11B864272ACD392800409740 /* DetailRouter.swift in Sources */,
 				11B864132ACD21CF00409740 /* HomeRouter.swift in Sources */,
 				112ECAD42ACB678C00989AD3 /* URLRequest+Ext.swift in Sources */,
 				11B864302ACD720A00409740 /* ModalCollectionViewCell.swift in Sources */,
 				11F39E852ACB4115006F4FF8 /* UICollectionView+Ext.swift in Sources */,
 				11B8641B2ACD384300409740 /* Constants.swift in Sources */,
-				11B8642A2ACD392800409740 /* DetailWorker.swift in Sources */,
 				11F39E992ACB4D09006F4FF8 /* AppSettings.swift in Sources */,
 				112ECAAA2ACB57FB00989AD3 /* HomeViewController.swift in Sources */,
 				11B864092ACD1CB700409740 /* UIColor+Ext.swift in Sources */,
@@ -445,48 +426,60 @@
 				11B8640B2ACD1E7C00409740 /* Double+Ext.swift in Sources */,
 				11F39E962ACB4A65006F4FF8 /* CoinResponse.swift in Sources */,
 				11F39E502ACB4010006F4FF8 /* AppDelegate.swift in Sources */,
-				11B864262ACD392800409740 /* DetailPresenter.swift in Sources */,
 				11B864112ACD21BB00409740 /* HomeWorker.swift in Sources */,
 				11B864152ACD21E300409740 /* HomeViewModel.swift in Sources */,
 				11F39E872ACB415A006F4FF8 /* HomeCollectionViewCell.swift in Sources */,
 				11B8640D2ACD218200409740 /* HomeInteractor.swift in Sources */,
-				11B864282ACD392800409740 /* DetailInteractor.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		11F39E5E2ACB4011006F4FF8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				11F39E672ACB4011006F4FF8 /* OWalletTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		11F39E682ACB4011006F4FF8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				11F39E712ACB4011006F4FF8 /* OWalletUITests.swift in Sources */,
-				11F39E732ACB4011006F4FF8 /* OWalletUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		11F39E642ACB4011006F4FF8 /* PBXTargetDependency */ = {
+		11EDA5D52ACDD0ED00B83DA8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 11F39E4B2ACB4010006F4FF8 /* OWallet */;
-			targetProxy = 11F39E632ACB4011006F4FF8 /* PBXContainerItemProxy */;
-		};
-		11F39E6E2ACB4011006F4FF8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 11F39E4B2ACB4010006F4FF8 /* OWallet */;
-			targetProxy = 11F39E6D2ACB4011006F4FF8 /* PBXContainerItemProxy */;
+			targetProxy = 11EDA5D42ACDD0ED00B83DA8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		11EDA5D72ACDD0ED00B83DA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JFJ87QUY27;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = per.OWallet.app.OWalletTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OWallet.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OWallet";
+			};
+			name = Debug;
+		};
+		11EDA5D82ACDD0ED00B83DA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JFJ87QUY27;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = per.OWallet.app.OWalletTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OWallet.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OWallet";
+			};
+			name = Release;
+		};
 		11F39E742ACB4011006F4FF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -523,6 +516,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -583,6 +577,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -666,85 +661,18 @@
 			};
 			name = Release;
 		};
-		11F39E7A2ACB4011006F4FF8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = JFJ87QUY27;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = per.OWallet.app.OWalletTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OWallet.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OWallet";
-			};
-			name = Debug;
-		};
-		11F39E7B2ACB4011006F4FF8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = JFJ87QUY27;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = per.OWallet.app.OWalletTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OWallet.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OWallet";
-			};
-			name = Release;
-		};
-		11F39E7D2ACB4011006F4FF8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = JFJ87QUY27;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = per.OWallet.app.OWalletUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = OWallet;
-			};
-			name = Debug;
-		};
-		11F39E7E2ACB4011006F4FF8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = JFJ87QUY27;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = per.OWallet.app.OWalletUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = OWallet;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		11EDA5D62ACDD0ED00B83DA8 /* Build configuration list for PBXNativeTarget "OWalletTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11EDA5D72ACDD0ED00B83DA8 /* Debug */,
+				11EDA5D82ACDD0ED00B83DA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		11F39E472ACB4010006F4FF8 /* Build configuration list for PBXProject "OWallet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -763,33 +691,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		11F39E792ACB4011006F4FF8 /* Build configuration list for PBXNativeTarget "OWalletTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				11F39E7A2ACB4011006F4FF8 /* Debug */,
-				11F39E7B2ACB4011006F4FF8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		11F39E7C2ACB4011006F4FF8 /* Build configuration list for PBXNativeTarget "OWalletUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				11F39E7D2ACB4011006F4FF8 /* Debug */,
-				11F39E7E2ACB4011006F4FF8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		11B864162ACD252D00409740 /* XCRemoteSwiftPackageReference "Nuke" */ = {
+		11EDA5F02ACDD29500B83DA8 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/kean/Nuke";
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
 			requirement = {
 				kind = exactVersion;
-				version = 12.1.6;
+				version = 5.18.2;
 			};
 		};
 		11F39E8A2ACB41F0006F4FF8 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
@@ -803,10 +713,15 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		11B864172ACD252D00409740 /* Nuke */ = {
+		11EDA5F12ACDD29500B83DA8 /* SDWebImage */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 11B864162ACD252D00409740 /* XCRemoteSwiftPackageReference "Nuke" */;
-			productName = Nuke;
+			package = 11EDA5F02ACDD29500B83DA8 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		11EDA5F32ACDD30700B83DA8 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11EDA5F02ACDD29500B83DA8 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
 		};
 		11F39E8B2ACB41F0006F4FF8 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
